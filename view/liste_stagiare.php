@@ -3,7 +3,7 @@
       $titre ="Liste des stagiaires";
       ob_start();
     ?>
-    <a href="create.php" class="btn btn-primary">Ajouter</a>
+    <a href="index.php?action=create" class="btn btn-primary">Ajouter</a>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -25,8 +25,8 @@
                     <td><?= $stagi[3]//->age ?></td> 
                     <td><?= $stagi[4]//->login ?></td>    
                     <td>
-                        <a href="index.php?action=editt&id=<?php echo $stagi[0] ?>" class="btn btn-success btn-sm">modifier</a>
-                        <a href="delete.php?id=<?php echo $stagi[0] ?>" class="btn btn-danger btn-sm">supprimer</a>
+                        <a href="index.php?action=edit&id=<?php echo $stagi[0] ?>" class="btn btn-success btn-sm">modifier</a>
+                        <a href="index.php?action=delete&id=<?php echo $stagi[0] ?>" class="btn btn-danger btn-sm">supprimer</a>
 
                     </td>       
                 </tr>

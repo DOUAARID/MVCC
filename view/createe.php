@@ -4,7 +4,7 @@
       ob_start();
     ?>
    
-  <form action="store.php" method="post">
+  <form action="index.php?action=store" method="post">
     <div class="form-group">
         <label for="nom">Nom :</label><br>
         <input type="text" id="nom" name="nom" required><br><br>
